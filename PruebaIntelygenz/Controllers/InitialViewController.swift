@@ -23,10 +23,10 @@ class InitialViewController: UIViewController {
         
         title = "App Lector RSS"
         
-        //Hacer llamada al interactor loadAllRssInteractor
         let reachability = Reachability()!
         
         reachability.whenReachable = { reachability in
+            //Recibimos un array de noticias nuevas
             let loadAllRssInteractor = LoadAllRssInteractorImpl()
             loadAllRssInteractor.execute(
                 onSuccess: { arrayRss in
@@ -38,7 +38,7 @@ class InitialViewController: UIViewController {
             })
         }
         reachability.whenUnreachable = { _ in
-            // Aquí tengo que cargar los datos de CoreData
+            // Aquí tengo que cargar los datos de CoreData porque no hay conexión
         }
         
         do {
@@ -48,14 +48,7 @@ class InitialViewController: UIViewController {
         }
         
     }
-    
-    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        
-    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let controller = segue.destination as! DetailViewController
         let cell = sender as! RssCell
