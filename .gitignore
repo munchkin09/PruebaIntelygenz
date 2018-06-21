@@ -66,3 +66,47 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+Pods/Manifest.lock
+Pods/Kingfisher/LICENSE
+Pods/Kingfisher/README.md
+Pods/Kingfisher/Sources/AnimatedImageView.swift
+Pods/Kingfisher/Sources/Box.swift
+Pods/Kingfisher/Sources/CacheSerializer.swift
+Pods/Kingfisher/Sources/Filter.swift
+Pods/Kingfisher/Sources/FormatIndicatedCacheSerializer.swift
+Pods/Kingfisher/Sources/Image.swift
+Pods/Kingfisher/Sources/ImageCache.swift
+Pods/Kingfisher/Sources/ImageDownloader.swift
+Pods/Kingfisher/Sources/ImageModifier.swift
+Pods/Kingfisher/Sources/ImagePrefetcher.swift
+Pods/Kingfisher/Sources/ImageProcessor.swift
+Pods/Kingfisher/Sources/ImageTransition.swift
+Pods/Kingfisher/Sources/ImageView+Kingfisher.swift
+Pods/Kingfisher/Sources/Indicator.swift
+Pods/Kingfisher/Sources/Kingfisher.h
+Pods/Kingfisher/Sources/Kingfisher.swift
+Pods/Kingfisher/Sources/KingfisherManager.swift
+Pods/Kingfisher/Sources/KingfisherOptionsInfo.swift
+Pods/Kingfisher/Sources/Placeholder.swift
+Pods/Kingfisher/Sources/RequestModifier.swift
+Pods/Kingfisher/Sources/Resource.swift
+Pods/Kingfisher/Sources/String+MD5.swift
+Pods/Kingfisher/Sources/ThreadHelper.swift
+Pods/Kingfisher/Sources/UIButton+Kingfisher.swift
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/Target Support Files/Kingfisher/Info.plist
+Pods/Target Support Files/Kingfisher/Kingfisher-dummy.m
+Pods/Target Support Files/Kingfisher/Kingfisher-prefix.pch
+Pods/Target Support Files/Kingfisher/Kingfisher-umbrella.h
+Pods/Target Support Files/Kingfisher/Kingfisher.modulemap
+Pods/Target Support Files/Kingfisher/Kingfisher.xcconfig
+Pods/Target Support Files/Pods-PruebaIntelygenz/Info.plist
+Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz-acknowledgements.markdown
+Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz-acknowledgements.plist
+Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz-dummy.m
+Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz-frameworks.sh
+Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz-resources.sh
+Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz-umbrella.h
+Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz.debug.xcconfig
+Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz.modulemap
+Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz.release.xcconfig
