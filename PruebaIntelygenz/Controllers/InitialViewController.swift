@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import CoreData
 
 class InitialViewController: UIViewController {
 
     @IBOutlet weak var rssCollectionView: UICollectionView!
     var data : [RssModel]? = nil
+    var context : NSManagedObjectContext?
     
     override func viewDidLoad() {
         super.viewDidLoad()
