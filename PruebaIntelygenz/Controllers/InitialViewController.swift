@@ -21,6 +21,8 @@ class InitialViewController: UIViewController {
         rssCollectionView.delegate = self
         rssCollectionView.dataSource = self
         
+        title = "App Lector RSS"
+        
         //Hacer llamada al interactor loadAllRssInteractor
         let reachability = Reachability()!
         
