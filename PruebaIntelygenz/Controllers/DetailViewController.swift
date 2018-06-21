@@ -31,7 +31,10 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func rssDetailWebpageClick(_ sender: UIButton) {
-        
+        guard let url = URL(string: (article?.url)!) else {
+            return
+        }
+        openUrlInSafari(url)
     }
     
     func bindData() {
@@ -39,8 +42,10 @@ class DetailViewController: UIViewController {
         rssDetailTitle.text = article!.title
         rssDetailDesc.text = article!.description
         rssDetailDate.text = article!.publishedAt
-        
-        
+    }
+    
+    func openUrlInSafari(_ url: URL ) {
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
 }
