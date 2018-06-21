@@ -22,16 +22,32 @@ class InitialViewController: UIViewController {
         rssCollectionView.dataSource = self
         
         //Hacer llamada al interactor loadAllRssInteractor
-        let loadAllRssInteractor = LoadAllRssInteractorImpl()
-        loadAllRssInteractor.execute(
-            onSuccess: { arrayRss in 
-                self.data = arrayRss
-                self.rssCollectionView.reloadData()
+        let reachability = Reachability()!
+        
+        reachability.whenReachable = { reachability in
+            let loadAllRssInteractor = LoadAllRssInteractorImpl()
+            loadAllRssInteractor.execute(
+                onSuccess: { arrayRss in
+                    self.data = arrayRss
+                    self.rssCollectionView.reloadData()
             },
-            onError:{
-                print("no ok")
-        })
+                onError:{
+                    print("no ok")
+            })
+        }
+        reachability.whenUnreachable = { _ in
+            // Aquí tengo que cargar los datos de CoreData
+        }
+        
+        do {
+            try reachability.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+        }
+        
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

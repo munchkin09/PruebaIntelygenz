@@ -19,7 +19,6 @@ func parseResultRss(data: Data) -> [RssModel] {
                     let urlToImage = (article["urlToImage"] as? String) ?? "https://vignette.wikia.nocookie.net/project-pokemon/images/4/47/Placeholder.png/revision/latest?cb=20170330235552"
                     let url = article["url"] as? String ?? ""
                     let publishedAt = article["publishedAt"] as? String
-                    print(publishedAt)
                     arrayParsed.append(RssModel(title: title, description: description, urlToImage: urlToImage, url: url, publishedAt: publishedAt!))
                 }
                 
