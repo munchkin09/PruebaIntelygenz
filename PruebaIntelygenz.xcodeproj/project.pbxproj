@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12A6012DEED7617A02E37D01 /* Pods_PruebaIntelygenz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F157336D9EBFD4F5469F5130 /* Pods_PruebaIntelygenz.framework */; };
 		2822E26A20DB990A0055C800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E26920DB990A0055C800 /* AppDelegate.swift */; };
 		2822E26C20DB990A0055C800 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E26B20DB990A0055C800 /* ViewController.swift */; };
 		2822E26F20DB990B0055C800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2822E26D20DB990B0055C800 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02BDB511B41BCF2EF1A0D6EE /* Pods-PruebaIntelygenz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaIntelygenz.release.xcconfig"; path = "Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz.release.xcconfig"; sourceTree = "<group>"; };
 		2822E26620DB990A0055C800 /* PruebaIntelygenz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaIntelygenz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2822E26920DB990A0055C800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2822E26B20DB990A0055C800 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		2822E27320DB990C0055C800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2822E27620DB990C0055C800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2822E27820DB990C0055C800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D34C0DAB23DE983B2D0F602 /* Pods-PruebaIntelygenz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaIntelygenz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz.debug.xcconfig"; sourceTree = "<group>"; };
+		F157336D9EBFD4F5469F5130 /* Pods_PruebaIntelygenz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PruebaIntelygenz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A6012DEED7617A02E37D01 /* Pods_PruebaIntelygenz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2822E26820DB990A0055C800 /* PruebaIntelygenz */,
 				2822E26720DB990A0055C800 /* Products */,
+				D6F350ED0F32CEC79E7143AD /* Pods */,
+				AB7AD011E3FBD419A89E0125 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = PruebaIntelygenz;
 			sourceTree = "<group>";
 		};
+		AB7AD011E3FBD419A89E0125 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F157336D9EBFD4F5469F5130 /* Pods_PruebaIntelygenz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6F350ED0F32CEC79E7143AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D34C0DAB23DE983B2D0F602 /* Pods-PruebaIntelygenz.debug.xcconfig */,
+				02BDB511B41BCF2EF1A0D6EE /* Pods-PruebaIntelygenz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2822E27B20DB990D0055C800 /* Build configuration list for PBXNativeTarget "PruebaIntelygenz" */;
 			buildPhases = (
+				263EF725B1F7F1D9A3339692 /* [CP] Check Pods Manifest.lock */,
 				2822E26220DB99090055C800 /* Sources */,
 				2822E26320DB99090055C800 /* Frameworks */,
 				2822E26420DB99090055C800 /* Resources */,
+				2FF01C61A2687D3276AF602A /* [CP] Embed Pods Frameworks */,
+				DA574687B44EC8C227272C86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		263EF725B1F7F1D9A3339692 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PruebaIntelygenz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FF01C61A2687D3276AF602A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA574687B44EC8C227272C86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2822E26220DB99090055C800 /* Sources */ = {
@@ -276,6 +357,7 @@
 		};
 		2822E27C20DB990D0055C800 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D34C0DAB23DE983B2D0F602 /* Pods-PruebaIntelygenz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +373,7 @@
 		};
 		2822E27D20DB990D0055C800 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02BDB511B41BCF2EF1A0D6EE /* Pods-PruebaIntelygenz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
