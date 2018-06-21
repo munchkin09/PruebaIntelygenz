@@ -21,6 +21,8 @@
 		2822E28A20DBAFA40055C800 /* LoadAllRssInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E28920DBAFA40055C800 /* LoadAllRssInteractor.swift */; };
 		2822E28F20DBB0A20055C800 /* RssModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E28E20DBB0A20055C800 /* RssModel.swift */; };
 		2822E29120DBB36F0055C800 /* ResultRssModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E29020DBB36F0055C800 /* ResultRssModel.swift */; };
+		2822E29320DBB51E0055C800 /* LoadAllRssInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E29220DBB51E0055C800 /* LoadAllRssInteractorImpl.swift */; };
+		2822E29620DBB65C0055C800 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E29520DBB65C0055C800 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		2822E28920DBAFA40055C800 /* LoadAllRssInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAllRssInteractor.swift; sourceTree = "<group>"; };
 		2822E28E20DBB0A20055C800 /* RssModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssModel.swift; sourceTree = "<group>"; };
 		2822E29020DBB36F0055C800 /* ResultRssModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRssModel.swift; sourceTree = "<group>"; };
+		2822E29220DBB51E0055C800 /* LoadAllRssInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAllRssInteractorImpl.swift; sourceTree = "<group>"; };
+		2822E29520DBB65C0055C800 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7D34C0DAB23DE983B2D0F602 /* Pods-PruebaIntelygenz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaIntelygenz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz.debug.xcconfig"; sourceTree = "<group>"; };
 		F157336D9EBFD4F5469F5130 /* Pods_PruebaIntelygenz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PruebaIntelygenz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +81,7 @@
 		2822E26820DB990A0055C800 /* PruebaIntelygenz */ = {
 			isa = PBXGroup;
 			children = (
+				2822E29420DBB6400055C800 /* Config */,
 				2822E28D20DBB0760055C800 /* Models */,
 				2822E28820DBAF850055C800 /* Interactors */,
 				2822E28320DBA66F0055C800 /* Views */,
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				2822E28920DBAFA40055C800 /* LoadAllRssInteractor.swift */,
+				2822E29220DBB51E0055C800 /* LoadAllRssInteractorImpl.swift */,
 			);
 			path = LoadAllRss;
 			sourceTree = "<group>";
@@ -133,6 +139,14 @@
 				2822E29020DBB36F0055C800 /* ResultRssModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2822E29420DBB6400055C800 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2822E29520DBB65C0055C800 /* Constants.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		AB7AD011E3FBD419A89E0125 /* Frameworks */ = {
@@ -283,6 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2822E26C20DB990A0055C800 /* InitialViewController.swift in Sources */,
+				2822E29620DBB65C0055C800 /* Constants.swift in Sources */,
+				2822E29320DBB51E0055C800 /* LoadAllRssInteractorImpl.swift in Sources */,
 				2822E29120DBB36F0055C800 /* ResultRssModel.swift in Sources */,
 				2822E27220DB990C0055C800 /* PruebaIntelygenz.xcdatamodeld in Sources */,
 				2822E28F20DBB0A20055C800 /* RssModel.swift in Sources */,
