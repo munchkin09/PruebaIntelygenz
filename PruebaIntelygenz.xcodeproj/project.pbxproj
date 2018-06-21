@@ -16,13 +16,12 @@
 		2822E27720DB990C0055C800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2822E27520DB990C0055C800 /* LaunchScreen.storyboard */; };
 		2822E27F20DBA2100055C800 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E27E20DBA2100055C800 /* DetailViewController.swift */; };
 		2822E28220DBA6080055C800 /* InitialViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E28120DBA6080055C800 /* InitialViewController+CollectionView.swift */; };
-		2822E28520DBA6C40055C800 /* RssCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2822E28420DBA6C40055C800 /* RssCell.xib */; };
 		2822E28720DBA85C0055C800 /* RssCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E28620DBA85C0055C800 /* RssCell.swift */; };
 		2822E28A20DBAFA40055C800 /* LoadAllRssInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E28920DBAFA40055C800 /* LoadAllRssInteractor.swift */; };
 		2822E28F20DBB0A20055C800 /* RssModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E28E20DBB0A20055C800 /* RssModel.swift */; };
-		2822E29120DBB36F0055C800 /* ResultRssModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E29020DBB36F0055C800 /* ResultRssModel.swift */; };
 		2822E29320DBB51E0055C800 /* LoadAllRssInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E29220DBB51E0055C800 /* LoadAllRssInteractorImpl.swift */; };
 		2822E29620DBB65C0055C800 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E29520DBB65C0055C800 /* Constants.swift */; };
+		28962D7D20DBCDC5008788B1 /* ParseResultRss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28962D7C20DBCDC5008788B1 /* ParseResultRss.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,13 +36,12 @@
 		2822E27820DB990C0055C800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2822E27E20DBA2100055C800 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2822E28120DBA6080055C800 /* InitialViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InitialViewController+CollectionView.swift"; sourceTree = "<group>"; };
-		2822E28420DBA6C40055C800 /* RssCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RssCell.xib; sourceTree = "<group>"; };
 		2822E28620DBA85C0055C800 /* RssCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssCell.swift; sourceTree = "<group>"; };
 		2822E28920DBAFA40055C800 /* LoadAllRssInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAllRssInteractor.swift; sourceTree = "<group>"; };
 		2822E28E20DBB0A20055C800 /* RssModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssModel.swift; sourceTree = "<group>"; };
-		2822E29020DBB36F0055C800 /* ResultRssModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRssModel.swift; sourceTree = "<group>"; };
 		2822E29220DBB51E0055C800 /* LoadAllRssInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAllRssInteractorImpl.swift; sourceTree = "<group>"; };
 		2822E29520DBB65C0055C800 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		28962D7C20DBCDC5008788B1 /* ParseResultRss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseResultRss.swift; sourceTree = "<group>"; };
 		7D34C0DAB23DE983B2D0F602 /* Pods-PruebaIntelygenz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaIntelygenz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PruebaIntelygenz/Pods-PruebaIntelygenz.debug.xcconfig"; sourceTree = "<group>"; };
 		F157336D9EBFD4F5469F5130 /* Pods_PruebaIntelygenz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PruebaIntelygenz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,6 +79,7 @@
 		2822E26820DB990A0055C800 /* PruebaIntelygenz */ = {
 			isa = PBXGroup;
 			children = (
+				28962D7B20DBCD6B008788B1 /* Parsers */,
 				2822E29420DBB6400055C800 /* Config */,
 				2822E28D20DBB0760055C800 /* Models */,
 				2822E28820DBAF850055C800 /* Interactors */,
@@ -109,7 +108,6 @@
 		2822E28320DBA66F0055C800 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2822E28420DBA6C40055C800 /* RssCell.xib */,
 				2822E28620DBA85C0055C800 /* RssCell.swift */,
 			);
 			path = Views;
@@ -136,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				2822E28E20DBB0A20055C800 /* RssModel.swift */,
-				2822E29020DBB36F0055C800 /* ResultRssModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +144,14 @@
 				2822E29520DBB65C0055C800 /* Constants.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		28962D7B20DBCD6B008788B1 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				28962D7C20DBCDC5008788B1 /* ParseResultRss.swift */,
+			);
+			path = Parsers;
 			sourceTree = "<group>";
 		};
 		AB7AD011E3FBD419A89E0125 /* Frameworks */ = {
@@ -228,7 +233,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2822E28520DBA6C40055C800 /* RssCell.xib in Resources */,
 				2822E27720DB990C0055C800 /* LaunchScreen.storyboard in Resources */,
 				2822E27420DB990C0055C800 /* Assets.xcassets in Resources */,
 				2822E26F20DB990B0055C800 /* Main.storyboard in Resources */,
@@ -299,8 +303,8 @@
 				2822E26C20DB990A0055C800 /* InitialViewController.swift in Sources */,
 				2822E29620DBB65C0055C800 /* Constants.swift in Sources */,
 				2822E29320DBB51E0055C800 /* LoadAllRssInteractorImpl.swift in Sources */,
-				2822E29120DBB36F0055C800 /* ResultRssModel.swift in Sources */,
 				2822E27220DB990C0055C800 /* PruebaIntelygenz.xcdatamodeld in Sources */,
+				28962D7D20DBCDC5008788B1 /* ParseResultRss.swift in Sources */,
 				2822E28F20DBB0A20055C800 /* RssModel.swift in Sources */,
 				2822E28720DBA85C0055C800 /* RssCell.swift in Sources */,
 				2822E26A20DB990A0055C800 /* AppDelegate.swift in Sources */,

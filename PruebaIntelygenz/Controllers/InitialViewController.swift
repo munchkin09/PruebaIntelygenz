@@ -11,6 +11,7 @@ import UIKit
 class InitialViewController: UIViewController {
 
     @IBOutlet weak var rssCollectionView: UICollectionView!
+    var data : [RssModel]? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,12 +20,26 @@ class InitialViewController: UIViewController {
         rssCollectionView.dataSource = self
         
         //Hacer llamada al interactor loadAllRssInteractor
+        let loadAllRssInteractor = LoadAllRssInteractorImpl()
+        loadAllRssInteractor.execute(
+            onSuccess: { arrayRss in 
+                self.data = arrayRss
+                self.rssCollectionView.reloadData()
+            },
+            onError:{
+                print("no ok")
+        })
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! DetailViewController
+        let cell = sender as! RssCell
+        controller.article = cell.article
     }
 }
 

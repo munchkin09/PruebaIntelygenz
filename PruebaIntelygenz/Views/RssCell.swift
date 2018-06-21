@@ -11,18 +11,18 @@ import Kingfisher
 
 class RssCell: UICollectionViewCell {
     
-    //var rss: RssModel?
-    
     @IBOutlet weak var rssImage: UIImageView!
-    
     @IBOutlet weak var rssTitle: UILabel!
+    @IBOutlet weak var rssDescription: UILabel!
     
-    @IBOutlet weak var rssShortDesc: UILabel!
+    var article : RssModel? = nil
     
-    func bindData() {
+    func bindData(data: RssModel) {
         
-        
-        
+        rssImage.kf.setImage(with: URL(string: data.urlToImage))
+        rssTitle.text = data.title
+        rssDescription.text = data.description.dropLast(40) + "..."
+        article = data        
     }
     
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailViewController: UIViewController {
 
@@ -15,12 +16,13 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var rssDetailDate: UILabel!
     @IBOutlet weak var rssDetailDesc: UITextView!
     
-    // var rssDataModel : RssModel?
+    var article : RssModel? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        bindData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +31,15 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func rssDetailWebpageClick(_ sender: UIButton) {
+        
+    }
+    
+    func bindData() {
+        rssDetailImage.kf.setImage(with: URL(string: article!.urlToImage))
+        rssDetailTitle.text = article!.title
+        rssDetailDesc.text = article!.description
+        rssDetailDate.text = article!.publishedAt
+        
         
     }
     

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol LoadAllRssInteractor {
-    func execute(onSuccess: @escaping ()-> Void, onError: @escaping () -> Void)
+    func execute(onSuccess: @escaping ([RssModel])-> Void, onError: @escaping () -> Void)
 }

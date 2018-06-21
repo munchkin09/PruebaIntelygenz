@@ -16,12 +16,15 @@ extension InitialViewController : UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if let num = data?.count {
+            return num
+        }
         return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell : RssCell = rssCollectionView.dequeueReusableCell(withReuseIdentifier: "RssCell", for: indexPath) as! RssCell
-        
+        cell.bindData(data: data![indexPath.row])
         return cell
     }
 
